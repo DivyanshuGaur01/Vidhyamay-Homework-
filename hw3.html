@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Athlete Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Grid container for athletes */
+        .athlete-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+            row-gap: 30px;
+            overflow: hidden;
+        }
+
+        /* Athlete card styles */
+        .athlete-card {
+            border: 2px solid #ccc;
+            padding: 15px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Image inside the card */
+        .athlete-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Athlete details styling */
+        .athlete-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .athlete-details h2 {
+            font-size: 1.3em;
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .athlete-details p {
+            font-size: 1em;
+            margin: 5px 0;
+            color: #777;
+        }
+
+        /* Hover effect */
+        .athlete-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Add a grid section for special athlete card */
+        .featured-athlete {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #ffebcc;
+            border: 3px solid #ffa726;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .featured-athlete img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .featured-athlete h2 {
+            font-size: 1.8em;
+            color: #ff7043;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advanced Athlete Showcase</h1>
+
+    <!-- Featured athlete section using grid-column-start and grid-column-end -->
+    <div class="athlete-grid">
+        <div class="featured-athlete">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Freddy_Adu_20110622.jpg/640px-Freddy_Adu_20110622.jpg" alt="Featured Athlete">
+            <h2>Featured Athlete: Freddy Adu</h2>
+        </div>
+
+        <!-- Athlete cards using grid and flexbox for internal alignment -->
+        <div class="athlete-card">
+            <img src="https://www.goerie.com/gcdn/authoring/2016/02/19/NETN/ghows-PA-703b5a7f-bde1-40a3-ba37-68beb7ce0092-a0db212e.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp" alt="Athlete 1">
+            <div class="athlete-details">
+                <h2>Heath Miller</h2>
+                <p>Sport:American Football</p>
+            </div>
+        </div>
+
+        <div class="athlete-card">
+            <img src="https://www.swissinfo.ch/content/wp-content/uploads/sites/13/2011/05/e2cdf9870b4ba74b85d68b4cb85c3f12-70333697-30219226-data.jpg" alt="Athlete 2">
+            <div class="athlete-details">
+                <h2>Roger Federer</h2>
+                <p>Sport: Tennis</p>
+            </div>
+        </div>
+
+        <div class="athlete-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg" alt="Athlete 3">
+            <div class="athlete-details">
+                <h2>LeBron James</h2>
+                <p>Sport: Basketball</p>
+            </div>
+        </div>
+
+        <div class="athlete-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg/1200px-Usain_Bolt_after_4_%C3%97_100_m_Rio_2016.jpg" alt="Athlete 4">
+            <div class="athlete-details">
+                <h2>Usain Bolt</h2>
+                <p>Sport: Running</p>
+            </div>
+        </div>
+
+        <div class="athlete-card">
+            <img src="https://www.usmagazine.com/wp-content/uploads/2022/06/August-11-2008-Michael-Phelps-Body-Evolution.jpg?quality=70&strip=all" alt="Athlete 5">
+            <div class="athlete-details">
+                <h2> Michael Phelps</h2>
+                <p>Sport: Swimming</p>
+            </div>
+        </div>
+
+        <div class="athlete-card">
+            <img src="https://i.pinimg.com/736x/9c/7d/a9/9c7da9151b3cb52404d1e69be6ad926a.jpg" alt="Athlete 6">
+            <div class="athlete-details">
+                <h2>Ricky Ponting</h2>
+                <p>Sport: Cricket</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
